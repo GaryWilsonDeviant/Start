@@ -1,0 +1,33 @@
+- hover для SVG-іконок в сайдбарі не вийшло зробити, можливо потрібно було конвертувати в іконочний шрифт
+
+
+
+- Спроба зробити пунктирну лінію між кругами
+
+/* .state__item--1::after {
+   content: "";
+   position: absolute;
+   top: 1%;
+   right: -340%;
+   transform: translateX(-50%);
+   width: 159px;
+   height: 1px;
+   border-radius: 2px;
+   border-style: 1px dashed #009FE3;
+   background-color: #009FE3;
+} */
+
+
+
+- Спроба добавити кастомну стрілку
+
+/* .reload__content select::after {
+   content: '';
+   position: absolute;
+   top: 50%;
+   right: 50%;
+   width: 20px;
+   height: 20px;
+   background: url('../img/arrow.svg') no-repeat right;
+   color: #667085;
+} */

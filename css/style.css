@@ -1,0 +1,403 @@
+/* =============== Google Fonts =============== */
+
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600,800&display=swap");
+
+body {
+   font-family: 'Inter', sans-serif;
+   color: #1b1b1b;
+   line-height: 24px;
+}
+
+/* =============== Reusable CSS Classes =============== */
+
+.title {
+   font-size: 20px;
+   font-weight: 500;
+   line-height: 27px;
+   margin-bottom: 20px;
+}
+
+.title--big {
+   color: #1FC0AE;
+   font-size: 24px;
+   font-weight: 800;
+   line-height: 32.883px;
+}
+
+[class*="__container"] {
+   max-width: 1036px;
+}
+
+
+
+.page {
+   background: #F6F7FA;
+   padding-left: 280px;
+   margin-left: 58px;
+}
+
+.main__title {
+   font-size: 48px;
+   line-height: 20px;
+   letter-spacing: -0.96px;
+   padding: 44px 0;
+   text-align: center;
+   border-bottom: 1px solid #EAECF0;
+   margin-bottom: 107px;
+}
+
+/* =============== Aside =============== */
+
+.aside {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 280px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   padding: 32px 16px;
+   background-color: #fff;
+   z-index: 1;
+}
+
+.nav__menu {
+   margin-bottom: auto;
+}
+
+.menu__item {
+   position: relative;
+   padding: 8px 0 8px 36px;
+   transition: all 0.3s;
+   margin-bottom: 4px;
+}
+
+.menu__item::before {
+   content: '';
+   position: absolute;
+   left: 0;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 24px;
+   height: 24px;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.menu__link--1::before,
+.menu__link--2::before,
+.menu__link--3::before,
+.menu__link--4::before {
+   content: '';
+   position: absolute;
+   left: 0;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 24px;
+   height: 24px;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.menu__link--1::before {
+   background-image: url('/img/aside/01.svg');
+}
+
+.menu__link--2::before {
+   background-image: url('/img/aside/02.svg');
+}
+
+.menu__link--3::before {
+   background-image: url('/img/aside/03.svg');
+}
+
+.menu__link--4::before {
+   background-image: url('/img/aside/04.svg');
+}
+
+.menu__item::before:hover {
+   background-color: #1b1b1b;
+}
+
+.menu__item:hover,
+.settings:hover {
+   border-radius: 6px;
+   background: rgba(31, 192, 174, 0.19);
+}
+
+.menu__link {
+   font-weight: 600;
+   color: #1b1b1b;
+   transition: all 0.3s;
+}
+
+.settings {
+   display: flex;
+   margin-top: auto;
+   padding: 8px 0 8px 36px;
+   position: relative;
+   background: none;
+   border: none;
+   transition: all 0.3s;
+   font-weight: 600;
+}
+
+.settings::before {
+   content: '';
+   position: absolute;
+   background-image: url('/img/aside/05.svg');
+   left: 0;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 24px;
+   height: 24px;
+   /* background-repeat: no-repeat; */
+   background-size: cover;
+}
+
+
+
+/* =============== State =============== */
+
+.state {
+   margin-bottom: 70px;
+}
+
+.state__items {
+   display: flex;
+   justify-content: space-between;
+}
+
+.state__item {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   position: relative;
+   width: 72px;
+   height: 80px;
+   padding-top: 50px;
+   text-align: center;
+}
+
+.state__item--1::before {
+   content: "";
+   position: absolute;
+   top: -36px;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 72px;
+   height: 72px;
+   border-radius: 50%;
+   background-color: #1FC0AE;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* Спроба зробити пунктирну лінію між кругами */
+/* .state__item--1::after {
+   content: "";
+   position: absolute;
+   top: 1%;
+   right: -340%;
+   transform: translateX(-50%);
+   width: 159px;
+   height: 1px;
+   border-radius: 2px;
+   border-style: 1px dashed #009FE3;
+   background-color: #009FE3;
+} */
+
+.state__item--2::before {
+   content: "";
+   position: absolute;
+   top: -36px;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 72px;
+   height: 72px;
+   border-radius: 50%;
+   background-color: #1FC0AE;
+   border: 1px solid #8E99AB;
+}
+
+.state__item--3::before,
+.state__item--4::before {
+   content: "";
+   position: absolute;
+   top: -36px;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 72px;
+   height: 72px;
+   border-radius: 50%;
+   background-color: #EAECF0;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.state__item--5::before {
+   content: "";
+   position: absolute;
+   top: -36px;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 72px;
+   height: 72px;
+   border-radius: 50%;
+   background-color: #EAECF0;
+   box-shadow: 0px 4px 4px 0px rgba(16, 24, 40, 0.05);
+}
+
+.state__item p {
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 20px;
+   letter-spacing: -0.28px;
+   margin-top: 16px;
+}
+
+.state__item--3 p,
+.state__item--4 p,
+.state__item--5 p {
+   color: #8E99AB;
+}
+
+
+
+/* =============== Information =============== */
+
+.information {
+   margin-bottom: 30px;
+}
+
+.information__items {
+   display: flex;
+   justify-content: space-between;
+}
+
+.information__item {
+   border-radius: 12px;
+   background: #fff;
+   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+   padding: 20px 20px 8px;
+   width: 508px; /* ! */
+}
+
+.item-information__info {
+   display: flex;
+   justify-content: space-between;
+}
+
+.item-information__info:not(:last-child) {
+   margin-bottom: 12px;
+}
+
+.info-item__title {
+   font-weight: 500;
+}
+
+.info-item__info {
+   color: #8E99AB;
+   font-weight: 500;
+}
+
+/* Right Card */
+
+.information__comfort {
+   display: flex;
+   align-items: center;
+   width: 508px; /* ! */
+   border-radius: 12px;
+   background: #fff;
+   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.comfort-information__wrapper {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex: 1;
+}
+
+.comfort-information__content {
+   text-align: center;
+}
+
+.comfort-information__title--big {
+   color: #1FC0AE;
+   font-size: 24px;
+   font-weight: 800;
+   line-height: 32.883px;
+}
+
+.comfort-information__content p {
+   color: #1FC0AE;
+   font-size: 14px;
+}
+
+.comfort-information__img {
+   margin-left: 20px;
+}
+
+
+
+/* =============== Reload =============== */
+
+.reload__container {
+   border-radius: 12px;
+   background: #FFF;
+   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+   padding: 17px 20px 50px;
+}
+
+.reload__content {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 51px;
+}
+
+.reload__content label {
+   color: #8E99AB;
+   font-size: 12px;
+}
+
+.reload__content select {
+   position: relative;
+   background-color: #f9fafb;
+   padding: 8px 12px;
+   border-radius: 8px;
+   border: 1px solid #EAECF0;
+   /* appearance: none; */
+}
+
+/* Спроба добавити кастомну стрілку */
+/* .reload__content select::after {
+   content: '';
+   position: absolute;
+   top: 50%;
+   right: 50%;
+   width: 20px;
+   height: 20px;
+   background: url('../img/arrow.svg') no-repeat right;
+   color: #667085;
+} */
+
+.reload__content select:not(:last-child) {
+   margin-bottom: 17px;
+}
+
+.reload__btn {
+   display: flex;
+   padding: 10px 26px;
+   border-radius: 8px;
+   background-color: #1fc0ae;
+   color: #fff;
+   font-size: 14px;
+   font-weight: 600;
+   line-height: 20px;
+   margin-left: auto;
+   transition: all 0.3s;
+}
+
+.reload__btn:hover {
+   background-color: #119686;
+}
